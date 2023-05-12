@@ -9,5 +9,4 @@ def example_queries():
     with open(website_path, "r") as f:
         website = f.read()
     website_yaml = yaml.safe_load(website.replace("---", ""))
-    showcase_section = website_yaml["showcase_section"]["examples"]
-    return showcase_section
+    return website_yaml["showcase_section"]["examples"]
